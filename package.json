@@ -1,0 +1,22 @@
+{
+  "name": "vusa",
+  "version": "1.0.0",
+  "description": "very unreliable speech assistant",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indranil/vusa.git"
+  },
+  "keywords": [
+    "speech"
+  ],
+  "author": "Indranil Dasgupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indranil/vusa/issues"
+  },
+  "homepage": "https://github.com/indranil/vusa#readme"
+}
