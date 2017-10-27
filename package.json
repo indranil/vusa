@@ -4,7 +4,8 @@
   "description": "very unreliable speech assistant",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/indranil/vusa/issues"
   },
-  "homepage": "https://github.com/indranil/vusa#readme"
+  "homepage": "https://github.com/indranil/vusa#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
 }
