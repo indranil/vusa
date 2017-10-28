@@ -1,7 +1,7 @@
-the Very Unreliable Speech Assistant
+VUSA -- the Very Unreliable Speech Assistant
 ====================================
 
-** STILL WORKING ON IT | NOTHING IS IMPLEMENTED YET **
+Voice recognition now works. Assistant part being put in. Have a play around!
 
 Just a tiny little script having fun with the [WebSpeech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
 
