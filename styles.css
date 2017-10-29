@@ -3,12 +3,6 @@
     !haiyah
     */
 
-/*
-Fonts:
-font-family: 'Lobster', cursive;
-font-family: 'Play', sans-serif;
-*/
-
 
 html {
   box-sizing: border-box;
@@ -41,6 +35,10 @@ body {
 
 header#header {
   flex: 3;
+  display: flex;
+  align-items: baseline;
+  width: 50%;
+  justify-content: space-between;
 }
 #header h1 {
   font-family: 'Boogaloo', cursive;
@@ -82,9 +80,8 @@ footer#footer .info em {
 .speech-area {
   width: 50%;
   min-width: 480px;
-  height: 50%;
   min-height: 500px;
-  max-height: 600px;
+  height: 500px;
   background: rgba(255,255,255,0.2);
   border-radius: 10px;
   padding: 10px;
@@ -97,13 +94,15 @@ footer#footer .info em {
 }
 
 .speech-area p {
+  max-width: 300px;
   width: auto;
   margin-bottom: 10px;
   border-radius: 50px;
   clear: both;
   padding: 10px;
-    color: #555;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  color: #555;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Play', sans-serif;
 }
 
 .speech-area p.vusa {
