@@ -1,5 +1,7 @@
 VUSA -- the Very Unreliable Speech Assistant
-====================================
+============================================
+
+**This tiny thing is available to play at [https://vusa.surge.sh](https://vusa.surge.sh)**
 
 Just a tiny little script having fun with the [WebSpeech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
 
