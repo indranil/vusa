@@ -14,6 +14,8 @@ Commands & Keywords you can use or try:
 * where are you from
 * secret
 
+* Or... have a peek in the `main.js` file and check out what VUSA responds to.
+
 Have a play around while I put a few APIS (weather, news, trending tweets) in.
 
 More to come... I'm just playing around to be honest. Fork/contribute/have fun! 😊
