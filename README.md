@@ -18,4 +18,4 @@ Commands & Keywords you can use or try:
 
 Have a play around while I put a few APIS (weather, news, trending tweets) in.
 
-More to come... I'm just playing around to be honest. Fork/contribute/have fun! 😊
+More to come... I'm just playing around to be honest, having fun! 😊
