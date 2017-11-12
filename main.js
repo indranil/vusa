@@ -181,7 +181,6 @@ const vusaAssist = (speech) => {
         return res.data;
       })
       .then(function (res) {
-        console.log(res);
         vusaImage(res.data.image_url, `<a target="_blank" href="${res.data.url}">GIPHY</a>`);
       })
       .catch(function (error) {
