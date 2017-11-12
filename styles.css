@@ -110,6 +110,22 @@ footer#footer .info em {
   align-self: flex-start;
   background: #DEDEE5;
 }
+.speech-area p.vusa-img {
+  position: relative;
+  border-radius: 10px;
+}
+.speech-area p.vusa-img img {
+  max-width: 250px;
+}
+.speech-area p.vusa-img span {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.speech-area p.vusa-img span a {
+  color: white;
+  text-decoration: none;
+}
 .speech-area p.usah {
   align-self: flex-end;
   background: #1571FE;

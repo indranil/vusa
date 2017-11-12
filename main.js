@@ -73,6 +73,14 @@ const vusaResponse = (response) => {
   speechArea.appendChild(vusa);
 };
 
+// sets up the vusa bubble with an image
+const vusaImage = (img, attr) => {
+  let vusa = document.createElement('p');
+  vusa.classList.add('vusa', 'vusa-img');
+  vusa.innerHTML = `<img src="${img}" alt="image" /><span class="attribution">${attr}</span>`;
+  speechArea.appendChild(vusa);
+}
+
 // this is the main brains of the operation.
 // we take the speech and put it through a few filters
 // to check what we're dealing with and send a reply
@@ -160,7 +168,26 @@ const vusaAssist = (speech) => {
   // the API pick it up as "gif"... currently, give, jiffy etc...
   // maybe have a find/replace for all "gif" sounding words to just
   // do the GIPHY?
-  
+  let giphyCmd = /gif (\w*)/i;
+  if (speech.match(giphyCmd)) {
+    let cmd = giphyCmd.exec(speech);
+    answered = true;
+    
+    let giphy = cmd[1];
+    
+    // if using this, maybe change the API key here to your own ->
+    axios.get(`http://api.giphy.com/v1/gifs/random?api_key=Ad45OKeJSw5AxL9F4QvcuAQnuZmIkK6w&tag=${giphy}&rating`)
+      .then(function (res) {
+        return res.data;
+      })
+      .then(function (res) {
+        console.log(res);
+        vusaImage(res.data.image_url, `<a target="_blank" href="${res.data.url}">GIPHY</a>`);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
   
   
   // Didn't find anything to answer?
