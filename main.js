@@ -87,7 +87,8 @@ const vusaAssist = (speech) => {
   
   // Normal responses
   for (let key in responsesDict) {
-    if (speech.includes(key)) {
+    let keyRegex = new RegExp(`\\b${key}\\b`, "g");
+    if (keyRegex.test(speech)) {
       vusaResponse(responsesDict[key]);
       answered = true;
     }
@@ -153,6 +154,14 @@ const vusaAssist = (speech) => {
   }
   
   // APIs here...
+  
+  // GIPHY
+  // One problem I'm having with "gif" is saying it and having
+  // the API pick it up as "gif"... currently, give, jiffy etc...
+  // maybe have a find/replace for all "gif" sounding words to just
+  // do the GIPHY?
+  
+  
   
   // Didn't find anything to answer?
   if (!answered) {
