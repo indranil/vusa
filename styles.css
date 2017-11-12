@@ -75,13 +75,13 @@ footer#footer .info em {
 
 #content {
   flex: 8;
+  display: flex;
+  flex-direction: column;
 }
 
 .speech-area {
   width: 50%;
   min-width: 480px;
-  min-height: 500px;
-  height: 500px;
   background: rgba(255,255,255,0.2);
   border-radius: 10px;
   padding: 10px;
@@ -91,6 +91,7 @@ footer#footer .info em {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border: 5px solid white;
+  flex: 8;
 }
 
 .speech-area p {

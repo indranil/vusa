@@ -1,5 +1,4 @@
-VUSA -- the Very Unreliable Speech Assistant
-============================================
+# VUSA — the Very Unreliable Speech Assistant
 
 **This tiny thing is available to play at [https://vusa.surge.sh](https://vusa.surge.sh)**
 
@@ -19,3 +18,8 @@ Commands & Keywords you can use or try:
 Have a play around while I put a few APIS (weather, news, trending tweets) in.
 
 More to come... I'm just playing around to be honest, having fun! 😊
+
+### Credits
+
+* Microphone by Pablo Tournelle from the Noun Project
+* curls.png downloaded from subtle patterns

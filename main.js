@@ -45,7 +45,7 @@ recognition.lang = 'en-US';
 
 
 
-// Some functions needed
+// Handles speech ending, either by button click or stopping speaking
 const handleSpeechEnd = () => {
   let currentUsah = document.querySelector('p.usah.current');
   recognition.stop();
@@ -198,7 +198,7 @@ recognition.onspeechend = function() {
 recognition.onresult = function(e) {
   let currentUsah = document.querySelector('p.usah.current');
   
-  //
+  // map out the results into a readable string
   let speech = Array.from(e.results)
     .map(result => result[0])
     .map(result => result.transcript)
