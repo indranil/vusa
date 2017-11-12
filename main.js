@@ -176,7 +176,7 @@ const vusaAssist = (speech) => {
     let giphy = cmd[1];
     
     // if using this, maybe change the API key here to your own ->
-    axios.get(`http://api.giphy.com/v1/gifs/random?api_key=Ad45OKeJSw5AxL9F4QvcuAQnuZmIkK6w&tag=${giphy}&rating`)
+    axios.get(`https://api.giphy.com/v1/gifs/random?api_key=Ad45OKeJSw5AxL9F4QvcuAQnuZmIkK6w&tag=${giphy}&rating`)
       .then(function (res) {
         return res.data;
       })
