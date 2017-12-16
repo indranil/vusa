@@ -4,8 +4,9 @@
   "description": "very unreliable speech assistant",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+    "build": "webpack",
+    "test": "mocha --require babel-core/register",
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,15 @@
   },
   "homepage": "https://github.com/indranil/vusa#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
 }

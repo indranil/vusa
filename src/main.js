@@ -1,10 +1,12 @@
 // VUSA
 // - Very Unreliable Speech Assistant
 
+import axios from 'axios';
+
 // here we go!
-var speaking = false;
-let speakButton = document.querySelector('.mic');
-let speechArea = document.querySelector('.speech-area');
+let speaking = false;
+const speakButton = document.querySelector('.mic');
+const speechArea = document.querySelector('.speech-area');
 
 // Dictionaries & URLs & APIs
 const responsesDict = {
@@ -15,6 +17,7 @@ const responsesDict = {
   "where are you from": "You know what, I'm not really sure! Github? Is that a place?",
   "who are you": "I'm VUSA, the Very Unique Speech Advisor!",
   "secret": "Shh! It's a secret!",
+  "thank you": "you're welcome!",
 };
 
 const vusaOpens = {
